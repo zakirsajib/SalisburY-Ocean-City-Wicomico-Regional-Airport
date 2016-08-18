@@ -1,0 +1,424 @@
+/*--------------------------------------------------------------
+# Bootstrap Sass
+--------------------------------------------------------------*/
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*--------------------------------------------------------------
+# WP Core default 
+--------------------------------------------------------------*/
+@import "wpcore/wpcore";
+
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*  1. GLOBAL STYLES
+/*---------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'museo_sans900_italic';
+    src: url('../fonts/museosans_900_italic-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_900_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans300_italic';
+    src: url('../fonts/museosans_300_italic-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_300_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans700_italic';
+    src: url('../fonts/museosans_700_italic-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_700_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans500_italic';
+    src: url('../fonts/museosans_500_italic-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_500_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans100_italic';
+    src: url('../fonts/museosans_100_italic-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_100_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans500';
+    src: url('../fonts/museosans_500-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans300';
+    src: url('../fonts/museosans_300-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_300-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans900';
+    src: url('../fonts/museosans_900-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_900-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans700';
+    src: url('../fonts/museosans_700-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_700-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans100';
+    src: url('../fonts/museosans_100-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  font-family: 'museo_sans300', sans-serif;
+}
+
+a {
+  &:hover, &:active, &:focus {
+    outline-color: white;
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header - Weather icon
+--------------------------------------------------------------*/
+header{
+	background-color:transparent;
+	min-height: 150px;
+	margin: 0 0 1em;
+	padding: 2em 0 0;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	.navbar-default{
+		background-color: transparent;
+		border: 0;
+		.navbar-brand{
+			padding: 0;
+		}
+		.mid-col{
+			.navbar-collapse{
+				border: 0;
+				ul{
+					display: table;
+					margin-bottom: 0;
+					padding: 1.2em 0;
+					li{
+						display: block;
+						float: left;
+						line-height: 1;
+						border-right: 1px solid #ffffff;
+						a{
+							font-family: 'museo_sans300', sans-serif;
+							font-size: 30px;
+							padding: 0 20px;
+							color: #fff;
+						}
+						&.last{
+							border-right: 0;
+						}
+					}
+				}
+			}
+		}
+		
+		.top-menu {
+			ul{
+				margin: 0;
+				padding: 0;
+				li{
+					list-style-type: none;
+					display: block;
+					float: left;
+					border-right: 1px solid #fff;
+					line-height: 1;
+					a{	
+						font-family: 'museo_sans300', sans-serif;
+						font-size: 14px;
+						padding: 0 10px;
+						color: #fff;
+						display: table;
+						line-height: 1;
+					}
+					&#last{
+						border-right: 0;
+					}
+				}
+			}
+		}
+		
+		.weather-widget {
+// 		    background-color: #1c2f50;
+		    position: relative;
+		    padding: 0 15px;
+		    .weather-icon {
+			    color: #ffffff;
+			    font-size: 20px;
+			    line-height: 2;
+			    padding: 0;
+			}
+			.menu-weather {
+				display: none;
+			    overflow: hidden;
+			    position: absolute;
+			    right: 0;
+			    z-index: 1000;
+			    width: 350px;
+			}
+		}
+		.site-description{
+			font-family: 'museo_sans300', sans-serif;
+			font-size: 20.6px;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			color: #fbe86b;
+			padding:0;
+			line-height: 2;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# Layer Slider
+--------------------------------------------------------------*/
+.slider{
+	position: relative;
+	.top-blue-curve{
+		background-image: url('../img/top-blue-curve.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 9;
+		width: 100%;
+		height: 289px;
+		position: absolute;
+		top:0;
+	}
+}
+/*
+#layerslider_1 {
+	position: absolute;
+	top: 0;
+}
+*/
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+
+.airline{
+	text-align: center;
+ 	min-height: 550px;
+ 	position: relative;
+	.down-arrow{
+		width: 61px;
+		height: 32px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 4;
+	}
+	
+	.airline-title{
+		background-image: url('../img/bottom-blue-curve.png');
+		background-position: center top;
+		background-repeat: no-repeat;
+		height: 401px;
+		margin-top:-150px;
+		position: relative;
+		z-index: 3;
+		h1{
+			font-family: 'museo_sans900', sans-serif;	
+			font-size: 190px;
+			text-transform: uppercase;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			//z-index: 10;
+			color: #fff;
+			margin: 0;
+			line-height: 0.69;
+		}
+	}
+	.airline-contents{
+		position: relative;
+		padding: 5em 0;
+	}
+}
+
+.parking{
+	text-align: center;
+	background: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.50), 
+      rgba(0, 0, 0, 0.50)
+    ), url('../img/parking-photo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 655px;
+	h1{
+		font-family: 'museo_sans900', sans-serif;	
+		font-size: 190px;
+		text-transform: uppercase;
+		color: #1a2c54;
+	}
+}
+
+.sby-news{
+	text-align: center;
+	background-color: #fff;
+	min-height: 550px;
+	position: relative;
+	h1{
+		font-family: 'museo_sans900', sans-serif;	
+		font-size: 190px;
+		text-transform: uppercase;
+		color: #1a2c54;
+	}
+}
+
+.find-us{
+	text-align: center;
+	background-color: #1a2c54;
+	min-height: 550px;
+	position: relative;
+	h1{
+		font-family: 'museo_sans900', sans-serif;	
+		font-size: 190px;
+		text-transform: uppercase;
+		color: #fff;	
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer{
+	background-color: #000;
+	color: #edeee9;
+	font-size: 14px;
+	padding: 2em 0;
+	position: relative;
+	.copyright{
+		text-align: right;	
+	}
+	.credit{
+		text-align: left;
+		a{
+			color: #edeee9;
+			&:hover, &:active, &:focus {}
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Responsive Code
+--------------------------------------------------------------*/
+/*
+@media (max-width: 1920px) {
+	.bottom-blue-curve{
+		bottom: 56px;
+	}
+	.airline{
+		bottom: -84px;
+	}	
+}
+*/
+@media (max-width: 1199px) {
+	header .navbar-default {
+	  .mid-col .navbar-collapse ul li a {
+	    font-size: 16px;
+	  }
+	  .site-description {
+	    font-size: 16.6px;
+	  }
+	}
+}
+
+@media (max-width: 992px) {
+	footer{
+		.copyright,
+		.credit{
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	header .navbar-default {
+	  .mid-col .navbar-collapse ul li a {
+	    font-size: 30px;
+	  }
+	  .site-description {
+	    font-size: 10.6px;
+	    text-align: right;
+	    padding-right: 20px;
+	  }
+	}
+}
+
+@media (max-width: 767px) {
+	header .navbar-default .mid-col ul li{ display: block;}
+}
+
+@media (max-width: 630px) {
+	header .navbar-default {
+	  .mid-col .navbar-collapse ul li a {
+	    font-size: 16px;
+	  }
+	}
+}
+
+@media (max-width: 530px) {
+	header .navbar-default {
+	  .mid-col .navbar-collapse ul{
+	    float: right;
+	    text-align: right;
+	    li{
+		    display: block;
+		    border-right: 0;
+		    float: none;
+		    a{
+			    line-height: 2;
+		    }
+	    }
+	  }
+	}
+}
+
+@media screen and ( max-height: 700px ){
+    .airline{
+	    .down-arrow{
+	    	top:-160px;
+    	}
+		.airline-title{
+	    	margin-top: -320px;
+	    }
+    }
+}

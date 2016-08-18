@@ -1,0 +1,1 @@
+$j=jQuery.noConflict();$j(document).ready(function(){$j(".weather-icon").on("click",function(){$j(".menu-weather").toggle()});smoothScroll.init({updateURL:false})});
