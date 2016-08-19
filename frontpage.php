@@ -17,7 +17,7 @@ get_header(); ?>
 			while ( have_posts() ) : the_post();?>
 
 				<div class="slider">
-					<div class="top-blue-curve"></div>
+					<div class="top-blue-curve hidden-sm hidden-xs"></div>
 					<?php echo do_shortcode('[layerslider id="1"]');?>
 				</div>
 								
