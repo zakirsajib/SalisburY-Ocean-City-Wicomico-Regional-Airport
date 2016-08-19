@@ -87,9 +87,18 @@ add_action( 'after_setup_theme', 'sby_content_width', 0 );
  */
 function sby_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'sby' ),
+		'name'          => esc_html__( 'Weather Sidebar', 'sby' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'sby' ),
+		'description'   => esc_html__( 'Add Awesome Weather widget', 'sby' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'News Sidebar', 'sby' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add Recent Posts widgets here.', 'sby' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -124,6 +133,28 @@ function sby_scripts() {
 add_action( 'wp_enqueue_scripts', 'sby_scripts' );
 
 /**
+ * Filter the except length to 20 characters.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function sby_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'sby_custom_excerpt_length', 999 );
+
+/**
+ * Filter the excerpt "read more" string.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+function sby_excerpt_more( $more ) {
+    return '.';
+}
+add_filter( 'excerpt_more', 'sby_excerpt_more' );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -147,3 +178,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+/**
+ * Load SBY News in sidebar
+ */
+require get_template_directory() . '/inc/sby-news.php';

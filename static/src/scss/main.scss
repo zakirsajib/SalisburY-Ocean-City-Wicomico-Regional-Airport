@@ -98,6 +98,79 @@ a {
     text-decoration: none;
   }
 }
+p{
+	font-family: 'museo_sans300', sans-serif;
+	font-size: 18px;
+}
+
+ul{
+	font-family: 'museo_sans300', sans-serif;
+	font-size: 18px;
+	margin: 0;
+	padding: 10px 0 20px;
+	li{
+		list-style-type: disc;
+		list-style-position: inside;
+	}
+}
+
+b, strong{
+	 font-family: 'museo_sans500', sans-serif;
+	 font-weight: normal;
+	 font-style: normal;
+}
+h1{
+	font-family: 'museo_sans700', sans-serif;
+}
+h2{
+	font-family: 'museo_sans700', sans-serif;
+	font-size: 48px;
+}
+h3{
+	
+}
+h4{
+	
+}
+h5{
+	
+}
+h6{
+	
+}
+
+/*---------------------------------------------------------------------*/
+/*  PRELOADER
+/*---------------------------------------------------------------------*/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(../img/45.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
 
 /*--------------------------------------------------------------
 # Header - Weather icon
@@ -229,7 +302,6 @@ header{
 --------------------------------------------------------------*/
 
 .airline{
-	text-align: center;
  	min-height: 550px;
  	position: relative;
 	.down-arrow{
@@ -263,11 +335,128 @@ header{
 			color: #fff;
 			margin: 0;
 			line-height: 0.69;
+			text-align: center;
 		}
 	}
 	.airline-contents{
 		position: relative;
 		padding: 5em 0;
+		color: #1a2c54;
+		.left-col{
+			border-right: 1px solid #1a2c54;
+			padding: 0 40px 0 0;
+			h2{
+				font-family: 'museo_sans700', sans-serif;
+				font-size: 48px;
+				margin-bottom: 20px;
+				line-height: 1.2;
+			}
+			h3{
+				font-family: 'museo_sans700', sans-serif;
+				font-size: 30px;
+			}
+			p,ul{
+				font-family: 'museo_sans300', sans-serif;
+				font-size: 18px;
+			}
+			ul{
+				margin: 0;
+				padding: 10px 0 20px;
+				li{
+					list-style-type: disc;
+					list-style-position: inside;
+				}
+			}
+			.book-btn{
+				padding: 10px 0;
+			}
+		}
+		.right-col {
+			margin-top: 20px;
+			line-height: 1.2;
+			.american-aa-sidebar{
+				position: relative;
+				.american-heading{
+					
+				}
+				.american-contents{
+					ul{
+						margin: 0;
+						padding: 10px 0 0;
+						.list-group-item{
+							border: 0;
+							padding: 10px 0;
+							line-height: 1.4;
+						}
+					}
+				}
+			}
+			.sby-news-sidebar{
+				position: relative;
+				.sby-news-heading{
+					position: relative;
+					#element-1{ 
+						position:relative;
+						h2{
+							font-family: 'museo_sans900', sans-serif;
+							font-size: 120px;
+							color: #fbe86b;
+							text-transform: uppercase;
+						}
+					}
+					#element-2	{
+						position: absolute;
+						bottom: 10px;
+						left: 20px;
+						h3{
+							font-family: 'museo_sans300', sans-serif;
+							font-size: 74.18px;
+							color: #1a2c54;
+							margin: 0;
+						}
+					}
+				}
+				.sby-news-post{
+					position: relative;
+					.sby-news-listing ul {
+						padding: 0 0 0 10px;
+						li{
+							background: url(../img/arrow.png) no-repeat 0 0;
+							list-style: outside none none;
+							padding: 0 0 1em 2em;
+							margin: 5px 0;
+							line-height: 2;
+							.post-time{ 
+								line-height: 1;
+								a{
+									font-family: 'museo_sans700', sans-serif;
+									font-size: 14px;
+									color: #1a2c54;
+									line-height: 1.5;
+								}
+							}
+							.post-title {
+								padding: 0;
+								line-height: 1.3;
+								a{
+									font-size: 18px;
+									color: #7e8595;
+									text-transform: capitalize;
+								}
+							}
+							.post-excerpt{
+								p{
+									font-family: 'museo_sans500', sans-serif;
+									font-size: 18px;
+									color: #1c2f50;
+									line-height: 1.3;
+								}
+							}
+						}//
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -306,15 +495,47 @@ header{
 }
 
 .find-us{
-	text-align: center;
 	background-color: #1a2c54;
 	min-height: 550px;
 	position: relative;
+	padding: 0 0 8em;
 	h1{
 		font-family: 'museo_sans900', sans-serif;	
 		font-size: 190px;
 		text-transform: uppercase;
-		color: #fff;	
+		color: #fff;
+		text-align: center;	
+	}
+	.directions{
+		border-right: 1px solid #edeeea;
+		padding: 0 40px 0 0;
+		h2{
+			font-family: 'museo_sans300', sans-serif;
+			color: #edeeea;
+			text-align: center;
+		}
+		.lead{
+			font-size: 18px;
+			color: #edeeea;
+			text-align: center;
+			padding: 2em 6em;
+		}
+	}
+	.contact{
+		padding: 0 0 0 40px;
+		h2{
+			font-family: 'museo_sans300', sans-serif;
+			color: #edeeea;
+		}
+		.lead{
+			font-size: 18px;
+			color: #edeeea;
+			padding: 2em 0;
+		}
+		.sby-send-btn{
+			font-family: 'museo_sans700', sans-serif;
+
+		}
 	}
 }
 
@@ -324,18 +545,20 @@ header{
 --------------------------------------------------------------*/
 footer{
 	background-color: #000;
-	color: #edeee9;
-	font-size: 14px;
-	padding: 2em 0;
+	padding: 3.5em 0;
 	position: relative;
 	.copyright{
-		text-align: right;	
-	}
-	.credit{
-		text-align: left;
-		a{
-			color: #edeee9;
-			&:hover, &:active, &:focus {}
+		text-align: center;
+		p{
+			font-size: 14px;
+			color: #edeeea;
+			margin: 0;
+			a{
+				color: #edeeea;
+				&:hover, &:active, &:focus {
+				
+				}
+			}
 		}
 	}
 }
@@ -410,19 +633,3 @@ footer{
 	  }
 	}
 }
-
-/*
-@media screen and ( max-height: 700px ){
-    .airline{
-	    .down-arrow{
-	    	top:-160px;
-    	}
-		.airline-title{
-	    	margin-top: -320px;
-	    }
-    }
-    .slider > img{
-	    height: calc(1030px - 420px);
-    }
-}
-*/

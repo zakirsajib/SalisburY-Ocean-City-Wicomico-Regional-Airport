@@ -17,8 +17,49 @@
 	<div class="airline-contents">
 		<div class="container">
 			<div class="row">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit nisl efficitur eleifend dignissim. Nulla vel velit dui. Ut et placerat quam. Morbi lobortis condimentum magna. Aenean felis purus, convallis vel feugiat vitae, hendrerit eget orci. Mauris vulputate lectus accumsan, sollicitudin neque vel, eleifend neque. Maecenas euismod eget dui nec pellentesque. Proin ut massa lorem. Sed nisi enim, vestibulum in ultrices ut, interdum nec dolor. Phasellus ultricies urna vel sollicitudin sollicitudin. Maecenas non tempus tellus, id feugiat ligula. Aenean at sapien in dui pulvinar facilisis eu fermentum erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin dapibus faucibus maximus. Praesent tincidunt aliquet leo, ut eleifend lacus auctor at. Maecenas et orci neque.</p>
-				<p>In scelerisque nec elit lacinia vehicula. Quisque eu enim tortor. Nullam suscipit ut eros in blandit. Sed cursus eu mi hendrerit ullamcorper. Vivamus eget est non lacus venenatis elementum vitae interdum ante. Nunc suscipit, velit nec aliquam facilisis, arcu ex bibendum magna, eget ultrices metus quam nec dolor. Suspendisse tempus elit et sapien tristique auctor. Fusce consectetur sagittis dolor id venenatis. Cras facilisis vitae ligula vitae ultrices. In ante leo, fermentum at pulvinar ut, commodo quis eros. Vivamus ac dictum turpis, at sagittis sem. Pellentesque suscipit, odio et tempus accumsan, lorem ligula aliquet nibh, sed scelerisque metus massa eget justo. Proin iaculis metus eget odio tempus lobortis. Sed bibendum velit vitae tortor cursus, non pellentesque augue consectetur. Donec tristique eget odio sit amet fermentum. Nam diam ante, dictum nec lacinia id, imperdiet vel elit. </p>
+				<div class="col-lg-8 col-md-8 col-xs-12">
+					<div class="left-col">
+						<h2>Flying from Salisbury will make you love flying again!  It’s convenient and hassle-free.</h2>
+						<p>American Airlines operates six flights a day from the Salisbury-Ocean City: Wicomico Regional Airport, connecting thousands of passengers each year to destinations around the globe. Flights are operated by wholly owned subsidiary Piedmont Airlines to American hubs in Philadelphia (PHL) and Charlotte (CLT). 
+</p>
+
+<h3>Travel Tips for Salisbury Airport</h3>
+<ul>
+	<li>We recommend arriving at the airport ticket counter one hour prior to departure.</li>
+	<li>MUST-READ Information can be found at <a href="http://www.tsa.gov" target="_blank">www.tsa.gov</a></li>
+	<li>TICKET PURCHASING HINT: After clicking the American Airlines button below, simply type in Salisbury (SBY) as your originating airport and choose your destination. One reservation will take 
+you to any city served by American Airlines and its oneworld partners.</li>
+</ul>
+<p><strong>For ticket purchases, trip planning and the American AAdvantage mileage program</strong></p>
+<div class="book-btn"><a target="_blank" href="#"><img src="http://localhost/sby/wp-content/uploads/2016/08/booking-btn.png"></a></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<div class="right-col">
+						<div class="american-aa-sidebar">
+							<div class="american-heading">
+								<a href="http://www.aa.com/" target="_blank"><img src="http://localhost/sby/wp-content/uploads/2016/08/american-logo.png" alt="American Airlines"></a>
+							</div>
+							<div class="american-contents">
+								<ul class="list-group">
+								  <li class="list-group-item"><strong>American Airlines: <a href="http://www.aa.com" target="_blank">www.aa.com</a></strong> <br/>1-800-433-7300 or 1-800-428-4322 for airline information, reservations, purchase tickets, lost baggage and baggage sizes, flight times and schedules.
+								  </li>
+								  <li class="list-group-item"><strong>American Eagle/Piedmont Airlines:</strong><br/>410-742-2996 for corporate office base, personnel, applications, maintenance headquarters.</li>
+								</ul>
+							</div>	
+						</div>
+						<div class="sby-news-sidebar">
+							<div class="sby-news-heading">
+								<div id="element-1" class="element"><h2>News</h2></div>
+								<div id="element-2" class="element"><h3>SBY</h3></div>
+							</div>
+							<div class="sby-news-post">
+								<?php echo do_shortcode('[sby-news]') ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>
