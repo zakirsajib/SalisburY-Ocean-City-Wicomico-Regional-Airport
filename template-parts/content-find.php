@@ -5,14 +5,14 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-8 col-md-8 col-xs-12">
-				<div class="directions">
+				<div class="directions match-height">
 					<h2>Directions</h2>
 					<div class="lead">Salisbury Airport is located 5 miles southeast from downtown Salisbury, Maryland. </div>
 					<?php echo do_shortcode('[wpgmza id="1"]')?>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-xs-12">
-				<div class="contact">
+				<div class="contact match-height">
 					<h2>Contact Us</h2>
 					<div class="lead">
 						<address>Salisbury-Ocean City: <br/>Wicomico Regional Airport<br/>

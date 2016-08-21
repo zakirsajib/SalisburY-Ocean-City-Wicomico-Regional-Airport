@@ -25,7 +25,7 @@ $j = jQuery.noConflict();
 		$j(".post-title .post-excerpt").not($this).hide();
 		$this.toggle();
 	})
-		/*-------------------------------------------------------------------*/
+	/*-------------------------------------------------------------------*/
 	/*  4. Preloader. Requires jQuery jpreloader plugin.
 	/*-------------------------------------------------------------------*/
 
@@ -36,4 +36,49 @@ $j = jQuery.noConflict();
 	    'overflow': 'visible'
 	  });
 	})
+	
+	/*-------------------------------------------------------------------*/
+	/*  5. Show menu title while hovering on image
+	/*-------------------------------------------------------------------*/
+	
+	$j('.airport-nav li > a').hover( function() {
+        $j(this).find('.nav-text').fadeIn(300);
+    }, function() {
+        $j(this).find('.nav-text').fadeOut(100);
+    });
+    
+    /*-------------------------------------------------------------------*/
+	/*  6. Show runway information while hovering on
+	/*-------------------------------------------------------------------*/
+	
+	$j('.runway a, .miles-info-one a, .miles-info-two a').hover( function() {
+        $j(this).find('.airport-info').fadeIn(300);
+    }, function() {
+        $j(this).find('.airport-info').fadeOut(100);
+    });
+    
+    /*-------------------------------------------------------------------*/
+	/*  7. 
+	/*-------------------------------------------------------------------*/
+	$j('.runway a, .miles-info-one a, .miles-info-two a').click(function(e){
+		e.preventDefault();
+	})
+	
+	/*-------------------------------------------------------------------*/
+	/*  8. Our History...Public Documents show/hide
+	/*-------------------------------------------------------------------*/
+	$j('.contents-details #a1').css('display','block');
+	
+	$j(".contents-heading ul > li > a[data-toggle]").on("click", function(e) {
+	  	e.preventDefault();  // prevent navigating
+	  	var selector = $j(this).data("toggle");  // get corresponding element
+	  	$j(".contents-details section").hide();
+	  	$j(selector).show();
+	  	$j(selector).addClass('animated fadeIn');
+	});
+	/*-------------------------------------------------------------------*/
+	/*  9. Makes the height of all selected elements (".match-height")
+	/*  exactly equal. Requires jQuery matchHeight plugin.
+	/*-------------------------------------------------------------------*/
+	$j('.match-height').matchHeight();
 });
