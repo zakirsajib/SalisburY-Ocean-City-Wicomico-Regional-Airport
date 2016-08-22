@@ -28,45 +28,8 @@
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
-						<?php if(is_front_page()):?>
-							<div class="weather-widget pull-right">
-								<a href="#" class="weather-icon"><i class="wi wi-cloudy"></i></a>
-								<div class="menu-weather">
-									<?php dynamic_sidebar( 'sidebar-1' ); ?>
-								</div>
-							</div>
-							<div class="top-menu pull-right">
-								<ul>
-									<li><a data-scroll href="#airline-section">Airline</a></li>
-									<li><a data-scroll href="#parking">Services</a></li>
-									<li><a data-scroll href="#news">News</a></li>
-									<li id="last"><a data-scroll href="#find">Find Us</a></li>
-								</ul>
-							</div>
-						<?php endif;?>
-						<?php if(is_page('the-airport')):?>
-							<div class="weather-widget pull-right">
-								<a href="#" class="weather-icon"><i class="wi wi-cloudy"></i></a>
-								<div class="menu-weather">
-									<?php dynamic_sidebar( 'sidebar-1' ); ?>
-								</div>
-							</div>
-							<div class="top-menu pull-right">
-								<ul>
-									<li><a data-scroll href="#airport-section">Airport</a></li>
-									<li><a data-scroll href="#aviation">General Aviation</a></li>
-									<li><a data-scroll href="#development">Development</a></li>
-									<li><a data-scroll href="#directory">Directory</a></li>
-									<li id="last"><a data-scroll href="#area">Our Area</a></li>
-								</ul>
-							</div>
-						<?php endif;?>
-					</div> <!-- .col -->
-				</div> <!-- .row -->
-				<div class="row">
-					<div class="mid-col">
-						<div class="navbar-header">
+<!-- 					<div class="col-lg-3 col-md-3 first-col"> -->	
+					<div class="navbar-header">
 				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				        <span class="sr-only">Toggle navigation</span>
 				        <span class="icon-bar"></span>
@@ -81,6 +44,8 @@
 						<?php
 						endif;?>
 				   </div> <!-- .navbar-header -->
+<!-- 					</div> -->
+					<div class="col-lg-4 col-md-4 mid-col col-lg-offset-2">	
 				        <?php
 				            wp_nav_menu( array(
 				                'menu'              => 'primary',
@@ -90,17 +55,47 @@
 				                'menu_class'        => 'center-block'
 				            ));
 				        ?>
-						<div class="sby-tag-line row hidden-xs">
-						<div class="center-block">
-							<?php $description = get_bloginfo( 'description', 'display' );
-							if ( $description || is_customize_preview() ) : ?>
-								<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-							<?php
-							endif; ?>
+				        
+				    </div> <!-- .mid-col -->
+					<div class="col-lg-4 col-md-5 hidden-sm hidden-xs">
+						<?php if(is_front_page()):?>
+						<div class="top-menu">
+							<ul>
+								<li><a href="#">Airline</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">News</a></li>
+								<li id="last"><a href="#">Find Us</a></li>
+							</ul>
 						</div>
+						<?php endif;?>
+						<?php if(is_page('the-airport')):?>
+						<div class="top-menu">
+							<ul>
+								<li><a href="#">Airport</a></li>
+								<li><a href="#">General Aviation</a></li>
+								<li><a href="#">Development</a></li>
+								<li><a href="#">Directory</a></li>
+								<li id="last"><a href="#">Our Area</a></li>
+							</ul>
+						</div>
+						<?php endif;?>
+						<div class="weather-widget pull-right">
+							<a href="#" class="weather-icon"><i class="wi wi-cloudy"></i></a>
+							<div class="menu-weather">
+								<?php dynamic_sidebar( 'sidebar-1' ); ?>
+							</div>
+						</div>
+					</div> <!-- .right-col -->
+				</div> <!-- .row -->
+				<div class="sby-tag-line row hidden-xs">
+					<div class="center-block">
+						<?php $description = get_bloginfo( 'description', 'display' );
+						if ( $description || is_customize_preview() ) : ?>
+							<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+						<?php
+						endif; ?>
 					</div>
-					</div><!-- .mid-col -->	
-				</div> <!-- .row -->	
+				</div>
 		    </div><!-- .container -->
 		</nav><!-- .navbar -->	
 	</header><!-- #masthead -->

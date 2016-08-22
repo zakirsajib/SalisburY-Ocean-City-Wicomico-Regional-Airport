@@ -35,7 +35,8 @@ get_header(); ?>
 				<?php get_template_part('template-parts/content', 'airport');?>
 				<?php get_template_part('template-parts/content', 'aviation');?>
 				<?php get_template_part('template-parts/content', 'development');?>
-
+				<?php get_template_part('template-parts/content', 'directory');?>
+				<?php get_template_part('template-parts/content', 'area');?>
 			<?php endwhile; // End of the loop.
 			?>
 		</main><!-- #main -->

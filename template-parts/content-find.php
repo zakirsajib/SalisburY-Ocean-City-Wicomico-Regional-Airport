@@ -1,4 +1,4 @@
-<div class="find-us">
+<div class="find-us" id="find">
 	<div class="container">
 		<div class="row">
 			<h1>Find Us</h1>

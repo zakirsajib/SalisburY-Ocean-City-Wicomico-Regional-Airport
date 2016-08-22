@@ -23,6 +23,9 @@
 			</div><!-- .row -->
 		</div> <!-- .container -->
 	</footer><!-- #colophon -->
+	
+	<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+	
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

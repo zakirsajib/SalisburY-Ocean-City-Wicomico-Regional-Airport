@@ -13,7 +13,8 @@ $j = jQuery.noConflict();
 	/*  2. smoothScroll jQuery plugin
 	/*-------------------------------------------------------------------*/
 	smoothScroll.init({
-		updateURL: false
+		updateURL: false,
+		speed: 1500
 	});	
 	/*-------------------------------------------------------------------*/
 	/*  3. toggle - sby news sidebar
@@ -43,8 +44,10 @@ $j = jQuery.noConflict();
 	
 	$j('.airport-nav li > a').hover( function() {
         $j(this).find('.nav-text').fadeIn(300);
+        $j(this).find('img').addClass('animated flip');
     }, function() {
         $j(this).find('.nav-text').fadeOut(100);
+        $j(this).find('img').removeClass('animated flip');
     });
     
     /*-------------------------------------------------------------------*/
@@ -81,4 +84,36 @@ $j = jQuery.noConflict();
 	/*  exactly equal. Requires jQuery matchHeight plugin.
 	/*-------------------------------------------------------------------*/
 	$j('.match-height').matchHeight();
+	
+	/*-------------------------------------------------------------------*/
+	/*  10. Parallax effect. Source: pixelcog.github.io/parallax.js 
+	/*-------------------------------------------------------------------*/
+	$j('.parallax-window').parallax();
+	
+	/*-------------------------------------------------------------------*/
+	/*  11. Back to top 
+	/*-------------------------------------------------------------------*/
+
+	
+	if ($j('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $j(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $j('#back-to-top').addClass('show');
+            } else {
+                $j('#back-to-top').removeClass('show');
+            }
+        };
+	    backToTop();
+	    $j(window).on('scroll', function () {
+	        backToTop();
+	    });
+	    $j('#back-to-top').on('click', function (e) {
+	        e.preventDefault();
+	        $j('html,body').animate({
+	            scrollTop: 0
+	        }, 700);
+	    });
+	}
 });

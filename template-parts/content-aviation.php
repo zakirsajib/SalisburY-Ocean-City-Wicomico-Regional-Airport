@@ -1,6 +1,6 @@
 <div class="aviation-section" id="aviation">
 	<div class="aviation-featured-img">
-		<img src="http://localhost/sby/wp-content/uploads/2016/08/aviation-img.jpg" alt="" class="img-responsive">
+		<div class="parallax-window" data-parallax="scroll" data-image-src="http://localhost/sby/wp-content/uploads/2016/08/aviation-img.jpg"></div>
 		<h2>General Aviation</h2>
 	</div>
 	<div class="container">

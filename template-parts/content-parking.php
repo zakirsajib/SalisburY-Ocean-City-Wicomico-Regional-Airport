@@ -1,4 +1,4 @@
-<div class="parking">
+<div class="parking" id="parking">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-xs-12">

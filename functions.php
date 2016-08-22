@@ -121,6 +121,8 @@ function sby_scripts() {
 
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js', array( 'jquery' ),'', true );
 	
+	//wp_enqueue_script('jquery-effects-core');
+	
 	wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/node_modules/jquery-match-height/dist/jquery.matchHeight-min.js', array( 'jquery' ),'', true );
 
 	
