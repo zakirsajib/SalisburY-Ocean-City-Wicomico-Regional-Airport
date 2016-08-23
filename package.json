@@ -26,5 +26,8 @@
     "postcss-cli": "latest",
     "touch": "latest",
     "bootstrap-sass": "latest"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.1.4"
   }
 }

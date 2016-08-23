@@ -86,7 +86,7 @@
 								<article>
 									<h2>Hangar Rentals</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet sapien non pellentesque ultricies. Duis accumsan tincidunt nibh, ut tempus erat vestibulum non. Mauris id neque sed libero elementum aliquet a vitae est. Nullam vitae elit vulputate, congue ipsum a, facilisis nulla. Proin ac auctor dui. Duis varius elit a faucibus auctor. Vestibulum ut sodales lorem. Aenean cursus neque scelerisque dignissim volutpat. Vivamus eu hendrerit nibh. Etiam consectetur tortor quis enim mollis, eu consectetur erat pretium. Quisque ornare non libero ut elementum. Ut gravida faucibus urna, id hendrerit leo suscipit non. Vivamus suscipit sit amet odio eu luctus. </p>
-								<article>
+								</article>
 							</section>
 							<section id="a5">
 								<article>

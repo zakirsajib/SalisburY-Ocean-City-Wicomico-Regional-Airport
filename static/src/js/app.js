@@ -94,7 +94,6 @@ $j = jQuery.noConflict();
 	/*  11. Back to top 
 	/*-------------------------------------------------------------------*/
 
-	
 	if ($j('#back-to-top').length) {
     var scrollTrigger = 100, // px
         backToTop = function () {
@@ -116,4 +115,18 @@ $j = jQuery.noConflict();
 	        }, 700);
 	    });
 	}
+	
+	/*-------------------------------------------------------------------*/
+	/*  12. Our Area...Area posts show/hide
+	/*-------------------------------------------------------------------*/
+	  $j("#owl-demo").owlCarousel({
+	          navigation : true, // Show next and prev buttons
+			  slideSpeed : 300,
+			  paginationSpeed : 400,
+			  singleItem:true,
+			  navigationText: ["<img src='http://localhost/sby/wp-content/uploads/2016/08/left-arrow.png'>","<img src='http://localhost/sby/wp-content/uploads/2016/08/arrow.png'>"]	  
+		});
+	
+	
+	
 });

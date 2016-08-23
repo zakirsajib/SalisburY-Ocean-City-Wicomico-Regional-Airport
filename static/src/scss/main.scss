@@ -122,25 +122,14 @@ b, strong{
 	 font-weight: normal;
 	 font-style: normal;
 }
-h1{
+
+h1, h2, h3, h4, h5, h6{
 	font-family: 'museo_sans700', sans-serif;
 }
 h2{
-	font-family: 'museo_sans700', sans-serif;
 	font-size: 48px;
 }
-h3{
-	
-}
-h4{
-	
-}
-h5{
-	
-}
-h6{
-	
-}
+
 
 /*---------------------------------------------------------------------*/
 /*  PRELOADER
@@ -277,9 +266,9 @@ header{
 			color: #fbe86b;
 			padding:0;
 			line-height: 1;
-		}
+		} 
 	}
-}
+} // header
 
 
 /*--------------------------------------------------------------
@@ -538,7 +527,7 @@ header{
 			}
 		}
 	}
-}
+} // Airport
 
 
 .aviation-section{
@@ -597,7 +586,7 @@ header{
 		}
 	}
 	
-}
+}// Aviation
 
 .development-section{
 	padding: 0 0 5em;
@@ -674,10 +663,10 @@ header{
 	.third-col p{
 		margin: 20px 0;	
 	}
-}
+} // Development
 
 .directory-section{
-	padding: 0 0 5em;
+	padding: 0;
 	.directory-featured-img{
 		position: relative;
 		h2{
@@ -740,7 +729,84 @@ header{
 			}
 		}
 	}
-}
+} // Directory
+
+
+.area{
+	background-color: #fff;
+	min-height: 550px;
+	position: relative;
+	color: #1a2c54;
+	padding-bottom: 10em;
+	.area-heading{
+		text-align: center;
+		h2{
+			font-family: 'museo_sans900', sans-serif;	
+			font-size: 190px;
+			text-transform: uppercase;
+			margin: 0 0 30px;
+			line-height: 0.73;
+		}
+		.lead{
+			font-family: 'museo_sans300', sans-serif;	
+			font-size: 48px;
+		}
+	}
+	.left-col{
+		border-right: 1px solid #1a2c54;
+		padding: 2em 40px 0 0;
+		position: relative;
+		.owl-buttons{
+			position: absolute;
+			right: 25px;
+			top: 0;
+			div{
+				display: inline-block;
+				padding: 0 10px;
+			}
+		}
+		.area-posts{
+			color: #1a2c54;
+			display: block;
+			width: 100%;
+			height: auto;
+
+			h3{
+				font-family: 'museo_sans300', sans-serif;	
+				font-size: 36px;
+				margin: 20px 0 0;
+			}
+			.distance{
+				font-family: 'museo_sans300', sans-serif;	
+				font-size: 18px;
+				span.distance-num{
+					font-family: 'museo_sans700', sans-serif;
+					font-size: 36px;
+				}
+			}
+			.img-responsive{
+				margin: 2em 0;
+			}
+		}
+		
+	}
+	.right-col{
+		padding: 3em 0;
+		h4{	
+			font-family: 'museo_sans300', sans-serif;	
+			font-size: 30px;
+		}
+		ul{
+			li{
+				list-style-type: none;
+				a{
+					color: #1a2c54;
+					&:hover, &:active, &:focus {}
+				}
+			}
+		}
+	}
+} // Our Area
 
 
 .airport-arrow{
@@ -911,7 +977,7 @@ header{
 			}
 		}
 	}
-}
+}// airline
 
 .parking{
 	text-align: left;
@@ -977,22 +1043,111 @@ header{
 			}
 		}
 	}
-}
+} // services + parking
+
 
 .sby-news{
-	text-align: center;
 	background-color: #fff;
 	min-height: 550px;
 	position: relative;
-	h1{
-		font-family: 'museo_sans900', sans-serif;	
-		font-size: 190px;
-		text-transform: uppercase;
-		color: #1a2c54;
-		margin: 0;
-		line-height: 0.73;
+	padding: 0 0 5em;
+	.sby-news-heading{
+		padding: 0 0 2em;
+		h2{
+			font-family: 'museo_sans900', sans-serif;	
+			font-size: 190px;
+			text-transform: uppercase;
+			text-align: center;
+			color: #1a2c54;
+			margin: 0;
+			line-height: 0.73;
+		}
 	}
-}
+	.news-contents{
+		margin: 5em 0;
+		.left-col{
+			border-right: 1px solid #1a2c54;
+			padding: 0 40px 0 0;
+			position: relative;
+			.owl-buttons{
+				position: absolute;
+				right: 0;
+				top: -30px;
+				div{
+					display: inline-block;
+					padding: 0 5px;
+				}
+			}
+			.news-posts{
+				color: #1a2c54;
+				//display: block;
+				//width: 100%;
+				//height: auto;
+		
+				h2{
+					font-family: 'museo_sans700', sans-serif;	
+					font-size: 48px;
+					margin: 20px 0px;
+					line-height: 1;
+				}
+				p{
+					padding: 0 0 20px;
+				}
+				.img-responsive{
+					margin: 2em 0;
+				}
+			}
+		}
+		.right-col{
+			padding:0;
+			h4{	
+				font-family: 'museo_sans300', sans-serif;	
+				font-size: 30px;
+				color: #1a2c54;
+				margin: 0 0 20px;
+			}
+			.sby-news-post{
+				position: relative;
+				.sby-news-listing ul {
+					padding: 0;
+					li{
+						list-style: none;
+						padding: 0 0 1em 0;
+						margin: 5px 0;
+						line-height: 2;
+						.post-time{ 
+							line-height: 1;
+							a{
+								font-family: 'museo_sans700', sans-serif;
+								font-size: 14px;
+								color: #1a2c54;
+								line-height: 1.5;
+							}
+						}
+						.post-title {
+							padding: 0;
+							line-height: 1.3;
+							a{
+								font-size: 18px;
+								color: #7e8595;
+								text-transform: capitalize;
+							}
+						}
+						.post-excerpt{
+							p{
+								font-family: 'museo_sans500', sans-serif;
+								font-size: 18px;
+								color: #1c2f50;
+								line-height: 1.3;
+							}
+						}
+					}//
+				}
+			}
+		}
+	}
+}//sby-news
+
 
 .find-us{
 	background-color: #1a2c54;
@@ -1037,7 +1192,7 @@ header{
 
 		}
 	}
-}
+}// find us
 
 
 /*--------------------------------------------------------------
