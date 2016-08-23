@@ -96,13 +96,13 @@ function sby_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'News Sidebar', 'sby' ),
+		'name'          => esc_html__( 'Our Area Right Sidebar', 'sby' ),
 		'id'            => 'sidebar-2',
-		'description'   => esc_html__( 'Add Recent Posts widgets here.', 'sby' ),
+		'description'   => esc_html__( 'Add Text widgets here.', 'sby' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'sby_widgets_init' );
@@ -112,32 +112,17 @@ add_action( 'widgets_init', 'sby_widgets_init' );
  */
 function sby_scripts() {
 	wp_enqueue_style( 'sby-style', get_stylesheet_uri() );
-	
 	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/animate-css/animate.min.css');
-	
 	wp_enqueue_style( 'owl-carousel', get_template_directory_uri() . '/assets/owl-carousel/owl.carousel.css');
-		
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/node_modules/font-awesome/css/font-awesome.min.css'); 
-
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/static/dist/css/main.css');
 
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js', array( 'jquery' ),'', true );
-	
-	//wp_enqueue_script('jquery-effects-core');
-	
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js', array( 'jquery' ),'', true );	
 	wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/node_modules/jquery-match-height/dist/jquery.matchHeight-min.js', array( 'jquery' ),'', true );
-
-	
 	wp_enqueue_script( 'sby-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'sby-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-	
-	wp_enqueue_script( 'smoothScroll', get_template_directory_uri() . '/node_modules/smooth-scroll/dist/js/smooth-scroll.min.js', array('jquery'), '20151215', true );
-	
-	
-	wp_enqueue_script( 'owl.carousel', get_template_directory_uri() . '/assets/owl-carousel/owl.carousel.min.js', array('jquery'), '20151215', true );
-	
-	
+	wp_enqueue_script( 'smoothScroll', get_template_directory_uri() . '/node_modules/smooth-scroll/dist/js/smooth-scroll.min.js', array('jquery'), '20151215', true );	
+	wp_enqueue_script( 'owl.carousel', get_template_directory_uri() . '/assets/owl-carousel/owl.carousel.min.js', array('jquery'), '20151215', true );	
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/static/dist/js/app.min.js', array('jquery'), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -196,3 +181,7 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load SBY News in sidebar
  */
 require get_template_directory() . '/inc/sby-news.php';
+/**
+ * Create Our Area custom post type
+ */
+require get_template_directory() . '/inc/our-area.php';

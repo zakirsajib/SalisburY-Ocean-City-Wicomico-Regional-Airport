@@ -754,7 +754,8 @@ header{
 	}
 	.left-col{
 		border-right: 1px solid #1a2c54;
-		padding: 2em 40px 0 0;
+		padding: 0 40px 0 0;
+		margin: 3em 0 0;
 		position: relative;
 		.owl-buttons{
 			position: absolute;
@@ -774,24 +775,32 @@ header{
 			h3{
 				font-family: 'museo_sans300', sans-serif;	
 				font-size: 36px;
-				margin: 20px 0 0;
+				margin: 20px 0;
+				text-transform: capitalize;
 			}
-			.distance{
+			p{
 				font-family: 'museo_sans300', sans-serif;	
 				font-size: 18px;
 				span.distance-num{
 					font-family: 'museo_sans700', sans-serif;
 					font-size: 36px;
 				}
+				a{
+					color: #1a2c54;
+					&:hover, &:active, &:focus {}
+				}
+			}
+			a{
+				color: #1a2c54;
+				&:hover, &:active, &:focus {}
 			}
 			.img-responsive{
 				margin: 2em 0;
 			}
 		}
-		
 	}
 	.right-col{
-		padding: 3em 0;
+		padding: 2em 0;
 		h4{	
 			font-family: 'museo_sans300', sans-serif;	
 			font-size: 30px;

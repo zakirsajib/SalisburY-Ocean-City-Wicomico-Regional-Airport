@@ -2,7 +2,7 @@
 	<div class="airport-title">
 		<div class="container">
 			<div class="row">
-				<h1><?php the_field('airport_big_heading')?></h1>
+				<h1>The Airport</h1>
 			</div>
 			<div class="row">
 				<div class="condense">
@@ -10,9 +10,10 @@
 						<div class="runway">
 							<a href="#">
 								<div class="airport-arrow"></div>
-								<div class="runway-number"><?php the_field('runway_number')?></div>
-								<div class="runway-info"><?php the_field('runway_type')?></div>
-								<div class="airport-info"><div class="inner-airport-info"><?php the_field('mouse_hover_information_one')?></div>
+								<div class="runway-number">6,400'</div>
+								<div class="runway-info">Main Runway</div>
+								<div class="airport-info">
+									<div class="inner-airport-info">Accommodates Large Corporate Jets</div>
 								</div>
 							</a>
 						</div>
@@ -21,9 +22,10 @@
 						<div class="miles-info-one">
 							<a href="#">
 								<div class="airport-arrow"></div>
-								<div class="miles-number"><?php the_field('miles_number_one')?></div>
-								<div class="miles-info"><?php the_field('destination_name_one')?></div>
-								<div class="airport-info"><div class="inner-airport-info"><?php the_field('mouse_hover_information_two')?></div>
+								<div class="miles-number">38 miles</div>
+								<div class="miles-info">To Wallops Island</div>
+								<div class="airport-info">
+									<div class="inner-airport-info">NASA’s Virginia Space Flight Center </div>
 								</div>
 							</a>
 						</div>
@@ -32,9 +34,10 @@
 						<div class="miles-info-two">
 							<a href="#">
 								<div class="airport-arrow"></div>
-								<div class="miles-number"><?php the_field('miles_number_two')?></div>
-								<div class="miles-info"><?php the_field('destination_name_two')?></div>
-								<div class="airport-info"><div class="inner-airport-info"><?php the_field('mouse_hover_information_three')?></div>
+								<div class="miles-number">27 miles</div>
+								<div class="miles-info">To Beaches</div>
+								<div class="airport-info">
+									<div class="inner-airport-info">Ocean City Beach<br/> Rehobeth Beach <br/>Bethany Beach</div>
 								</div>
 							</a>
 						</div>
