@@ -5,18 +5,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-xs-12">
-					<div class="parking-col">
+					<div class="parking-col match-height">
 						<?php the_field('services_one')?>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-xs-12">
-					<div class="transportation-col">
+					<div class="transportation-col match-height">
 						<?php the_field('services_two')?>
 					</div>
 				</div>
 	
 				<div class="col-lg-4 col-md-4 col-xs-12">
-					<div class="taxi-col">
+					<div class="taxi-col match-height">
 						<?php the_field('services_three')?>
 					</div>
 				</div>

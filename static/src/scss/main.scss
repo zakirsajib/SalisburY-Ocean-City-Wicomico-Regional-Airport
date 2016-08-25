@@ -1284,9 +1284,6 @@ footer{
 }
 @media (max-width: 1199px) {
 	header .navbar-default {
-	  .mid-col .navbar-collapse ul li a {
-	    font-size: 16px;
-	  }
 	  .site-description {
 	    font-size: 16.6px;
 	  }
@@ -1353,8 +1350,9 @@ footer{
 	}
 	
 	.parking{
+		.parallax-window{ min-height: 1350px;}
 		.services{
-			height: 100%;
+			padding: 0;
 			.parking-col,
 			.transportation-col,
 			.taxi-col{
@@ -1384,12 +1382,19 @@ footer{
 			text-align: center;
 		}
 	}
+	
+	.parking .services .transportation-col .media{
+		display: table;
+		margin: 15px auto;
+		.media-body{
+			width: auto;
+		}
+	}
 }
 
 @media (max-width: 778px) {
 	.airline .airline-title h1{ font-size: 140px;}
 }
-
 
 @media (max-width: 767px) {
 	header .navbar-default .mid-col {
@@ -1402,10 +1407,30 @@ footer{
 				}
 				.icon-bar{
 					background-color: #000;
+					height: 5px;
+					width: 30px;
 				}
 			}
 		}
-		ul li{ display: block;}
+		.navbar-collapse ul{ // nav responsive code
+			background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
+			padding: 1em;
+			text-align: center;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			right: 0;
+			li{
+				float: none;
+				border-right: 0;
+				line-height: 2;
+				a{
+					text-transform: uppercase;
+					padding: 0;
+					letter-spacing: 5px;
+				}
+			}
+		}
 	}
 	.sby-news .sby-news-heading h2{
 		font-size: 100px;
@@ -1457,35 +1482,6 @@ footer{
 		}
 	}	
 }
-/*
-@media (max-width: 630px) {
-	header .navbar-default {
-	  .mid-col .navbar-collapse ul li a {
-	    font-size: 16px;
-	  }
-	}
-}
-*/
-
-/*
-@media (max-width: 530px) {
-	header .navbar-default {
-	  .mid-col .navbar-collapse ul{
-	    float: right;
-	    text-align: right;
-	    li{
-		    display: block;
-		    border-right: 0;
-		    float: none;
-		    a{
-			    line-height: 2;
-		    }
-	    }
-	  }
-	}
-}
-*/
-
 @media screen and (max-height: 750px) {
 	.airport .airport-map .airport-nav{
 		margin: 15% 0 0;
