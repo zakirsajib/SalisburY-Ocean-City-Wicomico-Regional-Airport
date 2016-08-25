@@ -369,11 +369,15 @@ header{
 		}
 		//
 		.condense{
-			max-width: 80%;
+			max-width: 70%;
 			margin: 0 auto;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
 			.runway{
 				position: relative;
-				top: 333px;
+				//top: 333px;
 				padding: 0 1em;
 				.runway-number{
 					font-family: 'museo_sans700', sans-serif;	
@@ -396,7 +400,7 @@ header{
 			.miles-info-one,
 			.miles-info-two{
 				position: relative;
-				top: 333px;
+				//top: 333px;
 				padding: 0 1em;
 				.miles-number{
 					font-family: 'museo_sans700', sans-serif;	
@@ -418,6 +422,7 @@ header{
 			.airport-info{
 				display: none;
 				background-color: #fbe86b;
+				position: absolute;
 				.inner-airport-info{
 					font-family: 'museo_sans700', sans-serif;	
 					font-size: 24px;
@@ -990,65 +995,74 @@ header{
 
 .parking{
 	text-align: left;
-	background: 
-	linear-gradient(
-      rgba(0, 0, 0, 0.60), 
-      rgba(0, 0, 0, 0.60)
-    ), url('../img/parking-photo.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	min-height: 655px;
-	padding: 9em 0 5em;
+	//background-size: cover;
+	//background-repeat: no-repeat;
+	//background-position: center bottom;
+	//min-height: 655px;
+	//padding: 9em 0 5em;
 	color: #fff;
+	position: relative;
 	h1{
 		font-family: 'museo_sans900', sans-serif;	
 		font-size: 190px;
 		text-transform: uppercase;
 		color: #1a2c54;
 	}
-	.parking-col{
-		padding: 0 40px 0 0;
-		h3{
-			font-family: 'museo_sans300', sans-serif;
-			font-size: 24px;
-		}
-		.parking-time > ul > li{
-			font-family: 'museo_sans300', sans-serif;
-			font-size: 18px;
-			list-style-type: none;	
-		}
+	.parallax-window {
+		min-height: 650px;
+		background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
 	}
-	.transportation-col{
-		h3{
-			font-family: 'museo_sans300', sans-serif;
-			font-size: 24px;
-			margin-bottom: 40px;
-		}
-		.media{
-			padding-bottom: 15px;
-			.media-left{
-				padding-right: 50px;
-			}	
-			a{
-				color: #fbe86b;
-				&:hover, &:active, &:focus {}
+	
+	.services{
+		position: absolute;
+		top:0;
+		left: 0;
+		right: 0;
+		padding: 5em 0;
+		.parking-col{
+			padding: 0 40px 0 0;
+			h3{
+				font-family: 'museo_sans300', sans-serif;
+				font-size: 24px;
+			}
+			.parking-time > ul > li{
+				font-family: 'museo_sans300', sans-serif;
+				font-size: 18px;
+				list-style-type: none;	
 			}
 		}
-	}
-	.taxi-col{
-		padding: 0 10px 0 0;
-		h3{
-			font-family: 'museo_sans300', sans-serif;
-			font-size: 24px;
-			margin-bottom: 5px;
+		.transportation-col{
+			h3{
+				font-family: 'museo_sans300', sans-serif;
+				font-size: 24px;
+				margin-bottom: 40px;
+			}
+			.media{
+				padding-bottom: 15px;
+				.media-left{
+					padding-right: 50px;
+				}	
+				a{
+					font-family: "museo_sans300",sans-serif;
+					color: #fbe86b;
+					&:hover, &:active, &:focus {}
+				}
+			}
 		}
-		address{
-			font-family: 'museo_sans300', sans-serif;
-			font-size: 18px;
-			a{
-				color: #fbe86b;
-				&:hover, &:active, &:focus {}
+		.taxi-col{
+			padding: 0 10px 0 0;
+			h3{
+				font-family: 'museo_sans300', sans-serif;
+				font-size: 24px;
+				margin-bottom: 5px;
+			}
+			address{
+				font-family: 'museo_sans300', sans-serif;
+				font-size: 18px;
+				a{
+					color: #fbe86b;
+					&:hover, &:active, &:focus {}
+				}
 			}
 		}
 	}
@@ -1169,6 +1183,9 @@ header{
 		text-transform: uppercase;
 		color: #fff;
 		text-align: center;	
+		margin-bottom: 50px;
+		margin-top: 0;
+		line-height: 1;
 	}
 	.directions{
 		border-right: 1px solid #edeeea;

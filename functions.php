@@ -104,6 +104,15 @@ function sby_widgets_init() {
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'The Airport Right Sidebar', 'sby' ),
+		'id'            => 'sidebar-3',
+		'description'   => esc_html__( 'Add Text widgets here.', 'sby' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'sby_widgets_init' );
 

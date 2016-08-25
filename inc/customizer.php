@@ -24,6 +24,28 @@ function sby_customize_register( $wp_customize ) {
 	$wp_customize->remove_control('background_color');
 	
 	
+	// Add Logo on Customizer's existing section 'title_tagline'
+	$wp_customize->add_setting( 'header_logo', 
+		array(
+			'default' => '',
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options',
+			'transport' => '',
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+	$wp_customize->add_control(new WP_Customize_Image_Control(
+		$wp_customize,'header_logo',
+	        array(
+	            'label' => __( 'Logo Upload', 'sby' ),
+	            'section' => 'title_tagline',
+	            'settings' => 'header_logo',
+	            'description' => 'Recommended Size: 439 x 209 pixels. Preferred Image format is SVG',
+	        )
+	    )
+	);
+	
+	
 	// Footer Panel
 	$wp_customize->add_panel( 'panel_id', array(
 	    'priority' => 10,

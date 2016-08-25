@@ -18,7 +18,9 @@ get_header(); ?>
 
 				<div class="slider">
 					<div class="top-blue-curve hidden-sm hidden-xs"></div>
-					<?php echo do_shortcode('[layerslider id="1"]');?>
+					<?php 
+						$slider_number = get_field('slider_number');
+						echo do_shortcode('[layerslider id='.$slider_number.']');?>
 				</div>
 								
 				<?php get_template_part('template-parts/content', 'airline');?>
