@@ -292,6 +292,8 @@ header{
 	}
 }
 
+.airport .top-blue-curve{ z-index: 0;}
+
 .airport{
 	.airport-map{
 		background: url('http://localhost/sby/wp-content/uploads/2016/08/airport-map.jpg');
@@ -1282,6 +1284,14 @@ footer{
 		margin-top: -210px;
 	}	
 }
+@media (max-width: 1270px) {
+	#airport-section .airport-title h1{
+		font-size: 140px;
+	}
+	.development-section .development-featured-img h2{
+		font-size: 140px;
+	}
+}
 @media (max-width: 1199px) {
 	header .navbar-default {
 	  .site-description {
@@ -1292,6 +1302,56 @@ footer{
 	.airline .airline-contents .right-col .sby-news-sidebar .sby-news-heading #element-1 h2{
 		font-size: 80px;
 	}
+	
+	#airport-section .airport-contents .left-col .contents-heading ul li{
+		margin: 0 5px 25px 0;
+	}
+	.aviation-section .aviation-featured-img h2{
+		font-size: 100px;
+	}
+}
+
+@media (max-width: 1177px) {
+	#airport-section .airport-title .condense{
+		max-width: 80%; 	
+	}
+}
+
+@media (max-width: 1070px) {
+	.development-section .development-featured-img h2{
+		font-size: 120px;
+	}
+	#airport-section .airport-title .condense{
+		max-width: 100%; 	
+	}
+	#airport-section .airport-contents .left-col .contents-details article{
+		clear: both;
+	}
+}
+
+@media (max-width: 1000px) {
+	
+	.airport .airport-map .airport-nav{
+		margin: 25% 0 0;
+	}
+	
+	.area .area-heading h2{
+		font-size: 140px;
+	}
+	.directory-section .directory-featured-img h2{
+		font-size: 140px;
+	}
+	.aviation-section .aviation-featured-img h2{
+		font-size: 80px;
+	}
+	.development-section {
+		.first-col h3, 
+		.sec-col h3, 
+		.third-col h3{
+			font-size: 20px;	
+		}
+	}
+	
 }
 
 @media (max-width: 992px) {
@@ -1390,10 +1450,104 @@ footer{
 			width: auto;
 		}
 	}
+	
+	.airport .airport-map .airport-nav{
+		margin: 30% 0 0;
+	}
+	#airport-section .airport-contents .left-col{
+		border-right: 0;
+		padding: 0;
+	}
+	.aviation-section {
+		.left-col {
+			margin: 0;	
+			padding: 0;
+			h2{
+				margin-top: 1em;
+			}
+		}
+		.right-col{
+			h2{
+				margin-top: 0;
+			}
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.development-section {
+		.first-col h3, 
+		.sec-col h3, 
+		.third-col h3{
+			font-size: 30px;	
+		}
+	}
+	.area .left-col{
+		padding: 0;
+		border-right: 0;
+	}
+	
+}
+
+@media (max-width: 930px) {
+	#airport-section .airport-title h1{
+		font-size: 130px;
+	}
+	.development-section .development-featured-img h2{
+		font-size: 100px;
+	}
+}
+
+@media (max-width: 864px) {
+	#airport-section .airport-title {
+		h1{
+			font-size: 120px;
+		}
+		.condense .airport-info .inner-airport-info{
+			font-size: 18px;
+		}
+	}
+	.aviation-section .right-col{
+		margin: 0 0 3em;
+		padding: 0 0 3em;
+	}
+	.directory-section .directory-featured-img h2{
+		font-size: 120px;
+	}	
+	.area .area-heading .lead{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 800px) {
+	#airport-section .airport-title {
+		h1{
+			font-size: 100px;
+		}
+		.condense{ 
+			.miles-info-one .miles-info{
+				font-size: 20px;
+			}
+			.miles-info-two .miles-info{
+				font-size: 20px;
+			}
+		}
+	}
+	.area .area-heading h2{
+		font-size: 120px;
+	}
 }
 
 @media (max-width: 778px) {
 	.airline .airline-title h1{ font-size: 140px;}
+}
+
+@media (max-width: 768px) {
+	.aviation-section .aviation-featured-img h2{
+		font-size: 70px;
+	}
+	.development-section .development-featured-img h2{
+		font-size: 80px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1436,6 +1590,20 @@ footer{
 		font-size: 100px;
 	}
 }
+@media (max-width: 665px) {
+	#airport-section .airport-title h1{
+		font-size: 80px;
+	}
+	.aviation-section .aviation-featured-img h2{
+		font-size: 60px;
+	}
+	.directory-section .directory-featured-img h2{
+		font-size: 80px;
+	}
+	.area .area-heading h2 {
+    	font-size: 80px;
+	}
+}
 
 @media (max-width: 600px) {
 	.airline .airline-title{
@@ -1450,6 +1618,25 @@ footer{
 	.sby-news .sby-news-heading h2,
 	.find-us h1{
 		font-size: 90px;
+	}
+	#airport-section .airport-title h1 {
+    	font-size: 60px;
+	}
+	.aviation-section .aviation-featured-img h2 {
+ 	   font-size: 50px;
+ 	 }
+ 	.development-section .development-featured-img h2 {
+    	font-size: 60px;
+	}
+	.directory-section .directory-contents .directory-heading h2 {
+    	color: #ffffff;
+		font-size: 30px;
+	}
+	.area .area-heading .lead {
+    	font-size: 25px;
+	}
+	footer .copyright p{
+		font-size: 16px;
 	}
 }
 
@@ -1471,6 +1658,69 @@ footer{
 			padding: 2em 0;
 		}
 	}
+	.aviation-section .aviation-featured-img h2 {
+    	font-size: 40px;
+	}
+	.development-section .development-featured-img h2 {
+    	font-size: 50px;
+	}
+	.directory-section .directory-featured-img h2 {
+    	font-size: 60px;
+	}
+	#airport-section .airport-title .condense {
+		.runway {
+			.runway-number{ 
+				font-size: 25px;
+			}
+			.runway-info{
+				font-size: 14px;	
+			}
+		}
+		.miles-info-one {
+			.miles-number{
+				font-size: 25px;	
+			}.miles-info{
+				font-size: 14px;	
+			}
+		}
+		.miles-info-two {
+			.miles-number{
+				font-size: 25px;
+			}.miles-info{
+				font-size: 14px;	
+			}
+		}
+	}
+	.development-section {
+		.first-col h3, 
+		.sec-col h3, 
+		.third-col h3{
+			font-size: 20px;	
+		}
+	}
+	.airport .airport-map .airport-nav {
+    	margin: 50% 0 0;
+	}
+}
+
+@media (max-width: 430px) {
+	#airport-section .airport-title h1 {
+ 	   font-size: 50px;
+ 	}
+ 	#airport-section .airport-title .condense {
+ 		.runway,
+ 		.miles-info-one,
+ 		.miles-info-two{
+	 		padding: 0;
+	 		.inner-airport-info{
+		 		font-size: 12px;
+		 		padding: 10px;
+	 		}
+	 	}
+	 }
+	 address{
+		 word-wrap: break-word;
+	 }
 }
 @media (max-width: 400px) {
 	.airline .airline-contents .right-col .sby-news-sidebar .sby-news-heading {
@@ -1480,7 +1730,38 @@ footer{
 		#element-2 h3{
 			font-size: 65px;
 		}
-	}	
+	}
+	.aviation-section{ 
+		.aviation-featured-img h2{
+			font-size: 30px;
+		}.left-col h2{
+			font-size: 30px;
+		}.right-col h2{
+			font-size: 30px;
+		}
+	}
+	.development-section {
+		.development-featured-img h2 {
+			font-size: 40px;
+		}
+		.directory-contents .directory-heading h2{
+			font-size: 25px;
+		}
+	}
+ 	 
+ 	 .area .area-heading{ 
+ 	 	h2 {
+ 	 		font-size: 60px;
+ 	 	}
+ 	 	.lead {
+ 	 		font-size: 18px;
+ 	 	}
+ 	 }
+}
+@media (max-width: 360px) {
+	.directory-section .directory-featured-img h2 {
+    	font-size: 50px;
+	}
 }
 @media screen and (max-height: 750px) {
 	.airport .airport-map .airport-nav{

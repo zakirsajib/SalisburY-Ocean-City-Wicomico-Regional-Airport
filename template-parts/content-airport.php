@@ -6,7 +6,7 @@
 			</div>
 			<div class="row">
 				<div class="condense">
-					<div class="col-lg-4 col-md-4 col-xs-12">
+					<div class="col-lg-4 col-md-4 col-xs-4">
 						<div class="runway">
 							<a href="#">
 								<div class="airport-arrow"></div>
@@ -17,7 +17,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-xs-12">
+					<div class="col-lg-4 col-md-4 col-xs-4">
 						<div class="miles-info-one">
 							<a href="#">
 								<div class="airport-arrow"></div>
@@ -28,7 +28,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-xs-12">
+					<div class="col-lg-4 col-md-4 col-xs-4">
 						<div class="miles-info-two">
 							<a href="#">
 								<div class="airport-arrow"></div>
