@@ -1249,29 +1249,29 @@ footer{
 --------------------------------------------------------------*/
 
 #back-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 9999;
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    line-height: 30px;
-    background: #fbe86b;
-    color: #444;
-    cursor: pointer;
-    border: 0;
-    border-radius: 2px;
-    text-decoration: none;
-    transition: opacity 0.2s ease-out;
-    opacity: 0;
-}
-#back-to-top:hover {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #fbe86b;
+  color: #444;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  &:hover {
     background: #1a2c54;
     color: #fff;
-}
-#back-to-top.show {
+  }
+  &.show {
     opacity: 1;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1291,9 +1291,24 @@ footer{
 	    font-size: 16.6px;
 	  }
 	}
+	#parking .services h2{font-size: 40px;}
+	.airline .airline-contents .right-col .sby-news-sidebar .sby-news-heading #element-1 h2{
+		font-size: 80px;
+	}
 }
 
 @media (max-width: 992px) {
+	header{
+		width: auto;
+	}
+	.airline .airline-contents .right-col .sby-news-sidebar .sby-news-heading {
+	  #element-1 h2 {
+	    font-size: 70px;
+	  }
+	  #element-2 h3 {
+	    font-size: 65px;
+	  }
+	}
 	footer{
 		.copyright,
 		.credit{
@@ -1303,36 +1318,146 @@ footer{
 }
 
 @media (max-width: 991px) {
-	header .navbar-default {
-	  .mid-col .navbar-collapse ul li a {
-	    font-size: 30px;
-	  }
-	  .site-description {
-	    font-size: 10.6px;
-	    text-align: right;
-	    padding-right: 20px;
-	  }
-	}
+	header{
+		left: 0;
+		right: 0;
+		.navbar-default {
+		  	.mid-col{
+				.navbar-header a{
+					margin-left: 0;
+				}   
+				.navbar-collapse ul li a {
+					font-size: 30px;
+				}
+				.site-description {
+					line-height: 5;
+					font-size: 20.6px;
+				}
+			}// mid-col
+		}// navbar-default
+	}// header
 	
-	.parking-col,
-	.transportation-col,
-	.taxi-col{
-		padding: 0;
-		text-align: center;
-	}
-/*
-	.airport{
-		.airport-map{
-			height: 100%;
+	.airline .airline-contents{
+		.left-col{
+			border-right: 0;
+			padding: 0;
+		}
+		.right-col .sby-news-sidebar .sby-news-heading {
+			#element-1 h2 {
+				font-size: 90px;
+			}
+			#element-2 h3 {
+				font-size: 74.18px;
+			}
 		}
 	}
-*/
+	
+	.parking{
+		.services{
+			height: 100%;
+			.parking-col,
+			.transportation-col,
+			.taxi-col{
+				padding: 0;
+				text-align: center;
+			}
+		}
+	}
+	.sby-news {
+	  .sby-news-heading h2 {
+	    font-size: 140px;
+	  }
+	  .news-contents .left-col {
+	    border-right: 0;
+	  }
+	}
+	.find-us{ 
+		h1{
+			font-size: 140px;
+		}
+		.directions{
+			border-right: 0;
+			padding: 0;
+		}
+		.contact{
+			padding: 0;
+			text-align: center;
+		}
+	}
 }
+
+@media (max-width: 778px) {
+	.airline .airline-title h1{ font-size: 140px;}
+}
+
 
 @media (max-width: 767px) {
-	header .navbar-default .mid-col ul li{ display: block;}
+	header .navbar-default .mid-col {
+		.navbar-header { 
+			position: relative;
+			.navbar-toggle{
+				border-color: transparent;
+				&:hover, &:focus{
+					background-color: transparent;
+				}
+				.icon-bar{
+					background-color: #000;
+				}
+			}
+		}
+		ul li{ display: block;}
+	}
+	.sby-news .sby-news-heading h2{
+		font-size: 100px;
+	}
 }
 
+@media (max-width: 600px) {
+	.airline .airline-title{
+		margin-top: 0;
+		height: 150px;
+		background-color: #1a2c54;
+		background-image: none;
+		h1{
+			font-size: 90px;
+		}
+	}
+	.sby-news .sby-news-heading h2,
+	.find-us h1{
+		font-size: 90px;
+	}
+}
+
+@media (max-width: 470px) {
+	.airline .airline-title{
+		height: 100px;
+		h1{
+			font-size: 70px;	 
+		 }
+	}
+	.sby-news .sby-news-heading h2{
+		font-size: 70px;
+	}
+	.find-us {
+		h1{
+			font-size: 70px;
+		}
+		.directions .lead{
+			padding: 2em 0;
+		}
+	}
+}
+@media (max-width: 400px) {
+	.airline .airline-contents .right-col .sby-news-sidebar .sby-news-heading {
+		#element-1 h2{
+			font-size: 70px;
+		}
+		#element-2 h3{
+			font-size: 65px;
+		}
+	}	
+}
+/*
 @media (max-width: 630px) {
 	header .navbar-default {
 	  .mid-col .navbar-collapse ul li a {
@@ -1340,7 +1465,9 @@ footer{
 	  }
 	}
 }
+*/
 
+/*
 @media (max-width: 530px) {
 	header .navbar-default {
 	  .mid-col .navbar-collapse ul{
@@ -1357,6 +1484,7 @@ footer{
 	  }
 	}
 }
+*/
 
 @media screen and (max-height: 750px) {
 	.airport .airport-map .airport-nav{
