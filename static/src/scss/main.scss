@@ -1276,12 +1276,31 @@ footer{
   }
 }
 
+
+#black-overlay{
+	width: 100%!important;
+	height: 480px!important;	
+}
+
 /*--------------------------------------------------------------
 # Responsive Code
 --------------------------------------------------------------*/
-@media (min-width: 1920px) {
+@media (min-width: 1281px) and (max-width: 1920px) {
 	.airline .airline-title{
 		margin-top: -210px;
+	}
+	
+	.airport .airport-map .airport-nav{
+		margin: 25% 0 0;
+	}
+	
+	
+	#airport-section .airport-title{
+		margin-top: -210px;
+		h1{
+			font-size: 150px;
+			top: 215px;
+		}
 	}	
 }
 @media (max-width: 1270px) {
@@ -1641,6 +1660,10 @@ footer{
 }
 
 @media (max-width: 470px) {
+	.navbar-brand > img{
+		max-width: 60%;
+	}
+	
 	.airline .airline-title{
 		height: 100px;
 		h1{
@@ -1761,6 +1784,79 @@ footer{
 @media (max-width: 360px) {
 	.directory-section .directory-featured-img h2 {
     	font-size: 50px;
+	}
+}
+@media (max-width: 320px) {
+	#airport-section {
+		.airport-title {
+			h1 {
+    			font-size: 45px;
+			}
+			.condense {
+				.runway {
+					.runway-number{ 
+						font-size: 18px;
+					}
+					.runway-info{
+						font-size: 12px;	
+					}
+				}
+				.miles-info-one {
+					.miles-number{
+						font-size: 18px;	
+					}.miles-info{
+						font-size: 12px;	
+					}
+				}
+				.miles-info-two {
+					.miles-number{
+						font-size: 18px;
+					}.miles-info{
+						font-size: 12px;	
+					}
+				}		
+			}
+		}
+		.airport-contents{
+			padding: 2em 0;
+			margin: 4em 0;
+		}
+	}
+	.airline {
+		.airline-contents {
+			padding: 1em 0;
+			.left-col {
+				h2{
+					font-size: 24px;
+				}
+				h3{
+					font-size: 20px;	
+				}
+				ul li{
+					padding: 0 0 20px;
+				}
+			}
+		}
+	}
+	
+	.parking .services .transportation-col .media {
+		.media-left{
+			float: left;
+			max-width: 50%;
+			padding-right: 25px;
+		}
+		.media-body{
+			float: left;
+			width: 50%;
+		}
+	}
+	.sby-news {
+		.sby-news-heading h2 {
+    		font-size: 50px;
+		}
+		.news-contents .left-col .news-posts h2{
+			font-size: 24px;
+		}
 	}
 }
 @media screen and (max-height: 750px) {
