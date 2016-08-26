@@ -4,7 +4,7 @@ Two pages of WordPress theme for Salisbury-Ocean City: Wicomico Regional Airport
 
 == Starter Theme ==
 
-Underscores
+Underscores theme
 
 == Required Tools ==
 
