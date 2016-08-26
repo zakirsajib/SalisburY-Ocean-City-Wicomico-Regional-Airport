@@ -1,17 +1,17 @@
-== Salisbury-Ocean City: Wicomico Regional Airport ==
+# Salisbury-Ocean City: Wicomico Regional Airport 
 
 Two pages of WordPress theme for Salisbury-Ocean City: Wicomico Regional Airport.
 
-== Starter Theme ==
+## Starter Theme 
 
 Underscores theme
 
-== Required Tools ==
+## Required Tools
 
 * NPM
 * package.json
 
-== Required CSS + JavaScripts + jQuery libraries ==
+## Required CSS + JavaScripts + jQuery libraries
 
 * Twitter Bootstrap 3+
 * Owl Carousel jQuery plugin
@@ -21,7 +21,7 @@ Underscores theme
 * smoothScroll jQuery plugin
 
 
-== Main Templates/files ==
+## Main Templates/files
 
 1. frontpage.php
 2. airport.php
@@ -29,7 +29,7 @@ Underscores theme
 4. header.php
 5. footer.php
 
-== Developer's Guide ==
+## Developer's Guide
 
 Check the package.json file to see the commands used. You must have npm installed to compile sass and javascripts files.
 
@@ -46,7 +46,7 @@ npm run build:js
 npm run watch:all
 
 
-Backend options:
+** Backend options **
 
 1. To upload logo, use customizer
 2. To edit contents use advanced custom fields pro plugin
@@ -55,7 +55,7 @@ Backend options:
 5. To edit contact form, use ninja forms
 
 
-Custom Post Type:
+** Custom Post Type: **
 
 * Our Area, located: '/inc/our-area.php'.
 
@@ -63,7 +63,7 @@ Shortcode Latest News/Post:
 
 * Located '/inc/sby-news.php'
 
-== Assets ==
+## Assets
 
 1. All required css, javascripts and jQuery libraries files are located:
 
@@ -76,7 +76,7 @@ Shortcode Latest News/Post:
 * Fonts: Museosans, located '/static/dist/fonts'
 
 
-== Required Plugins ==
+## Required Plugins
 
 1. Advanced Custom Fields
 2. WP Layer Slider
