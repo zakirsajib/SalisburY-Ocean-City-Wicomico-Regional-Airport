@@ -33,15 +33,15 @@ Underscores theme
 
 Check the package.json file to see the commands used. You must have npm installed to compile sass and javascripts files.
 
-1. To compile sass file, type following command on terminal or command prompt:
+* To compile sass file, type following command on terminal or command prompt:
 
 npm run build:css
 
-2. To compile javascript file, type following command on terminal or command prompt:
+* To compile javascript file, type following command on terminal or command prompt:
 
 npm run build:js
 
-3. To watch sass and javascript file, type following command on terminal or command prompt:
+* To watch sass and javascript file, type following command on terminal or command prompt:
 
 npm run watch:all
 
