@@ -57,11 +57,11 @@ Backend options:
 
 Custom Post Type:
 
-1. Our Area, located: '/inc/our-area.php'.
+* Our Area, located: '/inc/our-area.php'.
 
 Shortcode Latest News/Post: 
 
-1. Located '/inc/sby-news.php'
+* Located '/inc/sby-news.php'
 
 == Assets ==
 
