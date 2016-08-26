@@ -35,15 +35,15 @@ Underscores theme
 
 * To compile sass file, type following command on terminal or command prompt:
 
-npm run build:css
+``` npm run build:css ```
 
 * To compile javascript file, type following command on terminal or command prompt:
 
-npm run build:js
+``` npm run build:js ```
 
 * To watch sass and javascript file, type following command on terminal or command prompt:
 
-npm run watch:all
+``` npm run watch:all ```
 
 
 **Backend options**
