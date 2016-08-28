@@ -59,7 +59,7 @@ Underscores theme
 
 * Our Area, located: '/inc/our-area.php'.
 
-Shortcode Latest News/Post: 
+**Shortcode Latest News/Post:**
 
 * Located '/inc/sby-news.php'
 

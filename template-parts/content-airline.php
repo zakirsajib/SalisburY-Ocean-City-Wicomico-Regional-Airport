@@ -18,12 +18,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-xs-12">
-					<div class="left-col match-height">
+					<div class="left-col">
 						<?php the_field('airline_left_column')?>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-xs-12">
-					<div class="right-col match-height">
+					<div class="right-col">
 						<div class="american-aa-sidebar">
 							<div class="american-heading">
 								<a href="<?php the_field('airline_right_column_image_url')?>" target="_blank"><img src="<?php the_field('airline_right_column_image')?>" alt="American Airlines"></a>
