@@ -61,7 +61,7 @@ $j = jQuery.noConflict();
     });
     
     /*-------------------------------------------------------------------*/
-	/*  7. 
+	/*  7. Blocks anchor
 	/*-------------------------------------------------------------------*/
 	$j('.runway a, .miles-info-one a, .miles-info-two a').click(function(e){
 		e.preventDefault();
@@ -124,9 +124,7 @@ $j = jQuery.noConflict();
 			  slideSpeed : 300,
 			  paginationSpeed : 400,
 			  singleItem:true,
-			  navigationText: ["<img src='http://localhost/sby/wp-content/uploads/2016/08/left-arrow.png'>","<img src='http://localhost/sby/wp-content/uploads/2016/08/arrow.png'>"]	  
+			  navigationText: ["<img src='http://dev.flysbyairport.com/wp-content/uploads/2016/08/left-arrow.png'>","<img src='http://dev.flysbyairport.com/wp-content/uploads/2016/08/arrow.png'>"]	  
 		});
-	
-	
 	
 });

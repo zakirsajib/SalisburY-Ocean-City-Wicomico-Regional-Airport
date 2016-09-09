@@ -20,10 +20,10 @@ get_header(); ?>
 							<div class="row">
 								<div class="airport-nav pull-right hidden-xs">
 									<ul>
-										<li><a data-scroll href="#aviation"><img src="<?php echo get_template_directory_uri(); ?>/img/aviation-icon.png" alt=""><div class="nav-text">General Aviation</div></a></li>
-										<li><a data-scroll href="#development"><img src="<?php echo get_template_directory_uri(); ?>/img/business-center-icon.png" alt=""><div class="nav-text">Air Business Center</div></a></li>
+										<li><a data-scroll href="#aviation"><img src="<?php echo get_template_directory_uri(); ?>/img/ga-icon.png" alt=""><div class="nav-text">General Aviation</div></a></li>
+										<li><a data-scroll href="#development"><img src="<?php echo get_template_directory_uri(); ?>/img/airbus-icon.png" alt=""><div class="nav-text">Air Business Center</div></a></li>
 										<li><a data-scroll href="#directory"><img src="<?php echo get_template_directory_uri(); ?>/img/directory-icon.png" alt=""><div class="nav-text">Business Directory</div></a></li>
-										<li><a data-scroll href="#area"><img src="<?php echo get_template_directory_uri(); ?>/img/area.png" alt=""><div class="nav-text">Our Area</div></a></li>
+										<li><a data-scroll href="#area"><img src="<?php echo get_template_directory_uri(); ?>/img/ourarea-icon.png" alt=""><div class="nav-text">Our Area</div></a></li>
 									</ul>
 								</div>
 							</div> <!-- .container-->

@@ -30,6 +30,7 @@
 							</div>
 							<div class="american-contents"><?php the_field('arline_contents')?></div>	
 						</div>
+<!--
 						<div class="sby-news-sidebar">
 							<div class="sby-news-heading">
 								<div id="element-1" class="element"><h2><?php the_field('sby_news_sidebar_title_one')?></h2></div>
@@ -39,6 +40,7 @@
 								<?php echo do_shortcode('[sby-news]') ?>
 							</div>
 						</div>
+-->
 					</div>
 				</div>
 				
