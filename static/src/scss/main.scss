@@ -246,14 +246,17 @@ header#masthead{
 		    .weather-icon {
 			    color: #ffffff;
 			    font-size: 25px;
-			    line-height: 1;
-			    padding: 0 0 0 1em;
+			    line-height: 0;
+			    padding: 0 0 0 10px;
+			    position: relative;
+			    top: -10px;
 			}
 			.menu-weather {
 				display: none;
 			    overflow: hidden;
 			    position: absolute;
 			    right: 0;
+			    left: 0;
 			    z-index: 1000;
 			    width: 350px;
 			    .awesome-weather-header{
@@ -274,6 +277,11 @@ header#masthead{
 	}
 } // header
 
+
+.top-nav{
+	display: table;
+	margin: 0 auto;
+}
 
 /*--------------------------------------------------------------
 # Layer Slider
@@ -300,7 +308,7 @@ header#masthead{
 
 .airport{
 	.airport-map{
-		background: url('http://dev.flysbyairport.com/wp-content/uploads/2016/08/airport-map.jpg');
+		background: url('http://flysbyairport.com/wp-content/uploads/2016/08/airport-map.jpg');
 		background-position: center center;
 		background-repeat: no-repeat;
 		-webkit-background-size: cover;
@@ -1197,7 +1205,7 @@ header#masthead{
 		text-align: center;	
 		margin-bottom: 50px;
 		margin-top: 0;
-		line-height: 1;
+		line-height: 0.75;
 	}
 	.directions{
 		border-right: 1px solid #edeeea;

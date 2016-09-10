@@ -77,7 +77,7 @@ $j = jQuery.noConflict();
 	  	var selector = $j(this).data("toggle");  // get corresponding element
 	  	$j(".contents-details section").hide();
 	  	$j(selector).show();
-	  	$j(selector).addClass('animated fadeIn');
+	  	//$j(selector).addClass('animated fadeIn');
 	});
 	/*-------------------------------------------------------------------*/
 	/*  9. Makes the height of all selected elements (".match-height")
@@ -124,7 +124,7 @@ $j = jQuery.noConflict();
 			  slideSpeed : 300,
 			  paginationSpeed : 400,
 			  singleItem:true,
-			  navigationText: ["<img src='http://dev.flysbyairport.com/wp-content/uploads/2016/08/left-arrow.png'>","<img src='http://dev.flysbyairport.com/wp-content/uploads/2016/08/arrow.png'>"]	  
+			  navigationText: ["<img src='http://flysbyairport.com/wp-content/uploads/2016/08/left-arrow.png'>","<img src='http://flysbyairport.com/wp-content/uploads/2016/08/arrow.png'>"]	  
 		});
 	
 });

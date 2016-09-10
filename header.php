@@ -30,6 +30,7 @@
 				<div class="row">
 					<div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
 						<?php if(is_front_page()):?>
+						<div class="top-nav">
 							<div class="weather-widget pull-right">
 								<a href="#" class="weather-icon"><i class="wi wi-cloudy"></i></a>
 								<div class="menu-weather">
@@ -44,8 +45,10 @@
 									<li id="last"><a data-scroll href="#find">Find Us</a></li>
 								</ul>
 							</div>
+						</div>
 						<?php endif;?>
 						<?php if(is_page('the-airport')):?>
+						<div class="top-nav">
 							<div class="weather-widget pull-right">
 								<a href="#" class="weather-icon"><i class="wi wi-cloudy"></i></a>
 								<div class="menu-weather">
@@ -61,6 +64,7 @@
 									<li id="last"><a data-scroll href="#area">Our Area</a></li>
 								</ul>
 							</div>
+						</div>
 						<?php endif;?>
 					</div> <!-- .col -->
 				</div> <!-- .row -->
