@@ -1378,6 +1378,9 @@ header#masthead{
 			}
 		}
 		article{
+			margin: 0 0 1em;
+			padding: 0 2em;
+			border: 1px solid #ccc;
 			.entry-title{
 				font-family: "museo_sans300",sans-serif;
 				 font-size: 36px;
@@ -1394,6 +1397,42 @@ header#masthead{
 				color: #1a2c54;
 			}
 		}
+		.nav-links{
+			.nav-previous{
+				display: flex;
+				margin: 10px 0;
+				font-size: 18px;
+				a{
+					color: #042B50;
+				    background-color: #fbe86b;
+					border-radius: 10px;
+					font-family: "museo_sans700",sans-serif;
+					font-size: 18px;
+					padding: 8px 10px;
+					&:hover{
+						background-color: #8e96ab;
+						color: #ffffff;
+					}
+				}
+			}
+			.nav-next{
+				display: flex;
+				font-size: 18px;
+				a{
+					color: #042B50;
+					background-color: #fbe86b;
+					border-radius: 10px;
+				    font-family: "museo_sans700",sans-serif;
+				    font-size: 18px;
+				    padding: 8px 10px;
+				    &:hover{
+					    background-color: #8e96ab;
+					    color: #ffffff;
+				    }
+				}
+			}
+		}
+
 	}
 }
 

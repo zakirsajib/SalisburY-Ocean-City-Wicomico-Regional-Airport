@@ -17,7 +17,8 @@ get_header(); ?>
 					$slider_number = get_field('slider_number');
 					echo do_shortcode('[layerslider id=1]');?>
 			</div>
-			<section class="error-404 not-found">
+			<div class="container"><div class="row">
+			<section class="error-404 not-found col-md-10 col-md-offset-1">
 				<header class="page-header">
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'sby' ); ?></h1>
 				</header><!-- .page-header -->
@@ -28,6 +29,7 @@ get_header(); ?>
 					<?php get_search_form();?>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
+			</div></div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
