@@ -5,7 +5,8 @@ $j = jQuery.noConflict();
 	/*  1. Awesome Weather Pro plugin
 	/*-------------------------------------------------------------------*/
 
-	$j('.weather-icon').on('click', function(){
+	$j('.weather-icon').on('click', function(e){
+		e.preventDefault();
 		$j('.menu-weather').toggle();
 	});
 	
@@ -86,12 +87,7 @@ $j = jQuery.noConflict();
 	$j('.match-height').matchHeight();
 	
 	/*-------------------------------------------------------------------*/
-	/*  10. Parallax effect. Source: pixelcog.github.io/parallax.js 
-	/*-------------------------------------------------------------------*/
-	$j('.parallax-window').parallax();
-	
-	/*-------------------------------------------------------------------*/
-	/*  11. Back to top 
+	/*  10. Back to top 
 	/*-------------------------------------------------------------------*/
 
 	if ($j('#back-to-top').length) {
@@ -117,14 +113,24 @@ $j = jQuery.noConflict();
 	}
 	
 	/*-------------------------------------------------------------------*/
-	/*  12. Our Area...Area posts show/hide
+	/*  11. Our Area...Area posts show/hide
 	/*-------------------------------------------------------------------*/
 	  $j("#owl-demo").owlCarousel({
 	          navigation : true, // Show next and prev buttons
 			  slideSpeed : 300,
 			  paginationSpeed : 400,
 			  singleItem:true,
+			  autoHeight:true,
 			  navigationText: ["<img src='http://flysbyairport.com/wp-content/uploads/2016/08/left-arrow.png'>","<img src='http://flysbyairport.com/wp-content/uploads/2016/08/arrow.png'>"]	  
 		});
+		
+	/*-------------------------------------------------------------------*/
+	/*  12. Timeline Button
+	/*-------------------------------------------------------------------*/
+
+	$j('.timeline-button').on('click', function(e){
+		e.preventDefault();
+		$j('.timeline').toggle();
+	});
 	
 });

@@ -1,6 +1,7 @@
 <div class="aviation-section" id="aviation">
 	<div class="aviation-featured-img">
-		<div class="parallax-window" data-parallax="scroll" data-image-src="<?php the_field('aviation_section_image')?>"></div>
+<!-- 		<div class="parallax-window" data-parallax="scroll" data-image-src="<?php the_field('aviation_section_image')?>"></div> -->
+		<div class="aviation-parallax-window" style="background-image: url(<?php the_field('aviation_section_image')?>)"></div>
 		<h2><?php the_field('aviation_big_heading')?></h2>
 	</div>
 	<div class="container">

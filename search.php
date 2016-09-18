@@ -11,14 +11,22 @@ get_header(); ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		<div class="slider">
+			<div class="top-blue-curve hidden-sm hidden-xs"></div>
+			<?php 
+				$slider_number = get_field('slider_number');
+				echo do_shortcode('[layerslider id=1]');?>
+		</div>
 		<?php
 		if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'sby' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
-
+		<div class="search-found">
+			<div class="container">
+				<div class="row">
+					<header class="page-header">
+						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'sby' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					</header><!-- .page-header -->
+				</div>
+				<div class="row">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -32,9 +40,13 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_navigation();?>
+			
+				</div>
+			</div>
+		</div>
 
-		else :
+		<?php else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
@@ -44,5 +56,5 @@ get_header(); ?>
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

@@ -1,6 +1,7 @@
 <div class="directory-section" id="directory">
 	<div class="directory-featured-img">
-		<div class="parallax-window" data-parallax="scroll" data-image-src="<?php the_field('directory_section_image')?>"></div>
+<!-- 		<div class="parallax-window" data-parallax="scroll" data-image-src="<?php the_field('directory_section_image')?>"></div> -->
+		<div class="directory-parallax-window" style="background-image: url(<?php the_field('directory_section_image')?>)"></div>
 		<h2><?php the_field('directory_big_heading')?></h2>
 	</div>
 	<div class="directory-contents">	

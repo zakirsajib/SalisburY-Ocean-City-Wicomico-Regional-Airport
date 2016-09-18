@@ -48,7 +48,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-xs-12">
-					<div class="left-col match-height">
+					<div class="left-col">
 						<div class="contents-heading">
 							<?php if( have_rows('five_buttons') ): $count=1;?>
 							<ul>
@@ -71,7 +71,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-xs-12">
-					<div class="right-col match-height">
+					<div class="right-col">
 						<?php if ( is_active_sidebar( 'sidebar-3' ) ) {
 							dynamic_sidebar( 'sidebar-3' ); 
 						}?>

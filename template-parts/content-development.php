@@ -1,6 +1,7 @@
 <div class="development-section" id="development">
 	<div class="development-featured-img">
-		<div class="parallax-window" data-parallax="scroll" data-image-src="<?php the_field('development_section_image')?>"></div>
+<!-- 		<div class="parallax-window" data-parallax="scroll" data-image-src="<?php the_field('development_section_image')?>"></div> -->
+		<div class="development-parallax-window" style="background-image: url(<?php the_field('development_section_image')?>)"></div>
 		<h2><?php the_field('development_big_heading')?></h2>
 	</div>
 	<div class="container">

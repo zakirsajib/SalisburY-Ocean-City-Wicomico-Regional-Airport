@@ -9,7 +9,7 @@
 		<div class="row">
 			<div class="area-contents">
 				<div class="col-lg-8 col-md-8 col-xs-12">
-					<div class="left-col match-height">
+					<div class="left-col">
 						<div id="owl-demo" class="owl-carousel">
 							<?php
 								$query = new WP_Query( array(
@@ -37,7 +37,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-xs-12">
-					<div class="right-col match-height">
+					<div class="right-col">
 						<?php if ( is_active_sidebar( 'sidebar-2' ) ) {
 							dynamic_sidebar( 'sidebar-2' ); 
 						}?>
